@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    mikanos-dev:
+      build:
+          context: "./mikanos-docker"
+          dockerfile: Dockerfile
+      container_name: mikanos-dev
+      tty: true
+      user: vscode
+      privileged: true
+      environment:
+        - COLUMNS=200
+        - LINES=50
+        - TERM=xterm
+      volumes:
+        - ~/.ghq/github.com/uchan-nos/mikanos:/home/vscode/mikanos
+        - ~/.ghq/github.com/tianocore/edk2:/home/vscode/edk2
+        - ./:/home/vscode/try-os-from-zero
