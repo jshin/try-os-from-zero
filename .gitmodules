@@ -1,3 +1,0 @@
-[submodule "mikanos-docker"]
-	path = mikanos-docker
-	url = https://github.com/sarisia/mikanos-docker
