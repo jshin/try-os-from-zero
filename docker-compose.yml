@@ -4,7 +4,7 @@ services:
     mikanos-dev:
       build:
           context: "./mikanos-docker"
-          dockerfile: Dockerfile
+          dockerfile: amd64/Dockerfile
       container_name: mikanos-dev
       tty: true
       user: vscode
