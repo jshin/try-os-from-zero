@@ -14,6 +14,6 @@ services:
         - LINES=50
         - TERM=xterm
       volumes:
-        - ~/.ghq/github.com/uchan-nos/mikanos:/home/vscode/mikanos
-        - ~/.ghq/github.com/tianocore/edk2:/home/vscode/edk2
+        - ~/ghq/github.com/uchan-nos/mikanos:/home/vscode/mikanos
+        - ~/ghq/github.com/tianocore/edk2:/home/vscode/edk2
         - ./:/home/vscode/try-os-from-zero
